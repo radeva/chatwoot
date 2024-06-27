@@ -15,14 +15,14 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
 
-      - uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      # - uses: ruby/setup-ruby@v1
+      #   with:
+      #     bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'yarn'
+      # - uses: actions/setup-node@v4
+      #   with:
+      #     node-version: 20
+      #     cache: 'yarn'
 
       - name: yarn
         run: yarn install
