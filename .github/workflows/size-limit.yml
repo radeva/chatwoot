@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-20.04
+    runs-on: [flyci-macos-14-m2, wingman]
 
     steps:
       - uses: actions/checkout@v4
